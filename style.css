@@ -1,0 +1,90 @@
+html {
+    font-family:'Public Sans', sans-serif;
+}
+
+body {
+    font-size: 200%;
+    background-color: dimgrey;
+}
+
+header {
+    background-color: darkgray;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    color: red;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+      
+h1:hover {
+    -o-transition-property: width,height,-o-transform,background,font-size,opacity;
+    -o-transition-duration: 1s,1s,1s,1s,1s,1s;
+    -moz-transition-property: width,height,-o-transform,background,font-size,opacity;
+    -moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+    transition-property: width,height,transform,background,font-size,opacity;
+    transition-duration: 1s,1s,1s,1s,1s,1s;
+    font-size: 250%;
+    text-align: center;
+}
+
+@keyframes example  {
+    0% {color: red;}
+    11% {color: orange;}
+    22% {color: yellow;}
+    33% {color: lime;}
+    44% {color: green;}
+    55% {color: cyan;}
+    66% {color: blue;}
+    77% {color: purple;}
+    88% {color: fuchsia;}
+    99% {color: red;}
+}
+
+nav ul { 
+    box-sizing: border-box;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+article {
+    font-size: 30px;
+    text-align: justify;
+}
+
+table{
+    background-color: white;
+    text-align: center;
+    font-size: 100%;
+}
+
+footer {
+    background-color: darkgray;
+    text-align: center;
+}
+
+p {
+    font-size: 110%;
+}
+
+h3 {
+    font-size: 140%;
+}
